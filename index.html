@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Tribe</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Sitio web oficial de Ubuntu Tribe, una banda de reggae comprometida con la comunidad y la música.">
+    <meta name="keywords" content="Ubuntu Tribe, reggae, música, conciertos, proyectos comunitarios">
+    <meta name="author" content="Ubuntu Tribe">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Ubuntu Tribe</h1>
+            <p>Experimenta la fuerza de la comunidad y la música.</p>
+            <a href="#about" class="btn">Explora Nuestra Música</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#musica">Música</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#proyectos-comunitarios">Proyectos</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+    <h2>Sobre Nosotros</h2>
+        <img src="sobre-nosotros.png" alt="Ubuntu Tribe" class="about-image">
+    <p>
+        En <strong>Ubuntu Tribe</strong>, creemos que la música es una fuerza poderosa que une y transforma comunidades. Nuestra banda no es solo un grupo de músicos, sino una familia comprometida con el espíritu de <strong>Ubuntu</strong>, que se basa en la idea de "soy porque somos". Cada nota que tocamos y cada letra que cantamos reflejan nuestra profunda conexión con las personas que nos rodean.
+    </p>
+    <p>
+        Nos dedicamos a más que simplemente hacer música; buscamos crear un espacio donde la inclusión, la solidaridad y el respeto sean los pilares fundamentales. A través de nuestras canciones, eventos y proyectos comunitarios, aspiramos a inspirar un cambio positivo y a construir puentes entre diferentes culturas y experiencias. <strong>Ubuntu Tribe</strong> es un viaje compartido hacia la armonía y el crecimiento mutuo, donde cada miembro de nuestra comunidad es valioso y contribuye a la sinfonía de la vida.
+    </p>
+</section>
+
+
+    <section id="musica">
+        <h2>Música</h2>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/48065090&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/bandamaneva" title="Banda Maneva Reggae" target="_blank" style="color: #cccccc; text-decoration: none;">Banda Maneva Reggae</a> · <a href="https://soundcloud.com/bandamaneva/maneva-saudades-do-tempo" title="Maneva - Saudades do Tempo" target="_blank" style="color: #cccccc; text-decoration: none;">Maneva - Saudades do Tempo</a></div>
+        </iframe>
+    </section>
+
+    <section id="proyectos-comunitarios">
+        <h2>Proyectos Comunitarios</h2>
+        <div class="project-gallery">
+            <div class="project-item">
+    <img src="cultivando-esperanza.png" alt="Cultivando Esperanza" class="project-image">
+    <p><strong>Cultivando Esperanza</strong>: Un huerto comunitario para el cultivo de alimentos frescos y la enseñanza de técnicas de jardinería. Participa y aprende con nosotros.</p>
+</div>
+<div class="project-item">
+    <img src="musica-para-todos.png" alt="Música para Todos" class="project-image">
+    <p><strong>Música para Todos</strong>: Clases y talleres de música para jóvenes y adultos. ¡Descubre tu talento y participa en eventos comunitarios!</p>
+</div>
+
+    </section>
+
+    <section id="eventos">
+        <h2>Eventos</h2>
+        <div id="calendar">
+            <!-- Aquí puedes integrar un calendario de Google o crear una lista de eventos -->
+        </div>
+    </section>
+
+    <section id="tienda">
+        <h2>Tienda</h2>
+        <div class="shop-gallery">
+            <div class="shop-item">
+                <img src="path/to/product1.jpg" alt="Producto 1">
+                <p>Producto 1 - $20</p>
+                <button>Comprar</button>
+            </div>
+            <div class="shop-item">
+                <img src="path/to/product2.jpg" alt="Producto 2">
+                <p>Producto 2 - $25</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Añade más productos según sea necesario -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required aria-label="Nombre">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required aria-label="Correo Electrónico">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required aria-label="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ubuntu Tribe. Todos los derechos reservados.</p>
+        <img src="path/to/footer-image.jpg" alt="Logotipo de Ubuntu Tribe" class="footer-logo">
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

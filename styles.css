@@ -1,0 +1,236 @@
+/* Fuentes y Colores */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Hero */
+.hero {
+    background-image: url('hero-image.png'); /* Reemplaza con la ruta correcta */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106, 5, 114, 0.8), rgba(255, 140, 66, 0.8));
+    mix-blend-mode: multiply;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #FF8C42;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #6A0572;
+    transform: scale(1.05);
+}
+
+/* Navegación */
+nav {
+    background-color: rgba(18, 18, 18, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #FF8C42;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Secciones */
+section {
+    padding: 80px 20px;
+    margin-top: 60px;
+    background-color: rgba(18, 18, 18, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #FF8C42;
+}
+
+/* Formulario de Contacto */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+#contact-form button {
+    background-color: #FF8C42;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #6A0572;
+}
+
+/* Footer */
+footer {
+    background-color: #1b1b1b;
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+/* Estilos generales */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo general para las tarjetas de proyectos comunitarios */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #1e1e1e; /* Fondo oscuro para las tarjetas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 300px; /* Ajusta el tamaño de las tarjetas según sea necesario */
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 3 / 2; /* Mantiene la proporción de 3:2 */
+    object-fit: cover;
+}
+
+.project-item p {
+    padding: 15px;
+    color: #f5f5f5;
+    font-size: 1em;
+    margin: 0;
+    background-color: #333; /* Fondo del texto para mejor legibilidad */
+}
+
+/* Imagen de eventos */
+.events-image {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Logo del footer */
+.footer-logo {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-bottom: 10px;
+}
+/* Reproductor de música */
+section#musica iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+text-align: center; /* Centra el texto y otros elementos en el contenedor */
+/* Estilo para la imagen en la sección Sobre Nosotros */
+.about-image {
+    display: inline-block; /* Asegura que la imagen se alinee correctamente con el texto centrado */
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo según sea necesario */
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0; /* Espacio arriba y abajo de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para un efecto visual atractivo */
+}
